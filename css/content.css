@@ -1337,8 +1337,8 @@
 @media only screen and (max-width: 1537px) {
 
 	.hero-title {
-		font-size: calc(1rem + 18.15vw);
-		line-height: calc(1rem + 20.5vw);
+		font-size: calc(1rem + 10.15vw);
+		line-height: calc(1rem + 10.5vw);
 	}
 
 	.hero-subtitle {
@@ -1363,9 +1363,9 @@
 
 
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1537px) {
 	#hero-caption {
-		padding-top: 100px !important;
+		padding-top: 180px !important;
 		padding-bottom: 160px;
 	}
 
