@@ -1,0 +1,743 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>grim.meme</title>
+    <meta name="title" content="SageUniverse " />
+    <meta
+      name="description"
+      content="Sage universe combines the magic of memes with the wisdom of the cosmos. Together we'll explore new dimensions of fun, wisdom and financial freedom. Here YOU find your path to a better life, a greater you, where your wallet is not the only thing that expands..."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sageuniverse.meme/" />
+    <meta property="og:title" content="SageUniverse " />
+    <meta
+      property="og:description"
+      content="Sage universe combines the magic of memes with the wisdom of the cosmos. Together we'll explore new dimensions of fun, wisdom and financial freedom. Here YOU find your path to a better life, a greater you, where your wallet is not the only thing that expands..."
+    />
+    <meta property="og:image" content="./cover.gif" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://x.com/sage_univers3" />
+    <meta property="twitter:title" content="SageUniverse " />
+    <meta
+      property="twitter:description"
+      content="Sage universe combines the magic of memes with the wisdom of the cosmos. Together we'll explore new dimensions of fun, wisdom and financial freedom. Here YOU find your path to a better life, a greater you, where your wallet is not the only thing that expands..."
+    />
+    <meta property="twitter:image" content="./cover.gif" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="SageUniverse" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="npm/bootstrap%405.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="/media/favicon.ico" sizes="32x32" />
+
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css-1?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+    <link href="css2?family=Six+Caps&display=swap" rel="stylesheet" />
+    <style>
+      .card {
+        background: transparent;
+      }
+
+      .accordion-item {
+        background-color: #fff;
+        border: none !important;
+      }
+      .accordion .accordion-item {
+        border-bottom: 1px solid #000000;
+      }
+      .accordion .accordion-item button[aria-expanded="true"] {
+        border-bottom: 1px solid #000000;
+      }
+      .accordion button {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 1em 0;
+        color: #000;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+      }
+      .accordion button:hover,
+      .accordion button:focus {
+        cursor: pointer;
+        color: #000;
+      }
+      .accordion button:hover::after,
+      .accordion button:focus::after {
+        cursor: pointer;
+        color: #000;
+      }
+      .accordion button .accordion-title {
+        padding: 1em 1.5em 1em 0;
+      }
+      .accordion button .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+      }
+      .accordion button .icon::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      .accordion button .icon::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+      .accordion button[aria-expanded="true"] {
+        color: #000;
+      }
+      .accordion button[aria-expanded="true"] .icon::after {
+        width: 0;
+      }
+      .accordion button[aria-expanded="true"] + .accordion-content {
+        opacity: 1;
+        max-height: 15em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+      .accordion .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+      }
+      .accordion .accordion-content p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+
+      .dark-section-wrapper:nth-of-type(4) {
+        background-image: url("images/header/ELEMENTSreverse.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+
+      .light-section-wrapper {
+        background-image: url("images/header/ELEMENTSreverse.png");
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* xsView: visible on extra small screens (mobile) */
+      .xsView {
+        display: none;
+      }
+
+      @media (max-width: 767.98px) {
+        .xsView {
+          display: block;
+        }
+      }
+
+      /* mdView: visible on medium screens (tablet) and up */
+      .mdView {
+        display: none;
+      }
+
+      @media (min-width: 768px) {
+        .mdView {
+          display: block;
+        }
+      }
+
+      /* mdNone: hidden on medium screens (tablet) and up */
+      .mdNone {
+        display: block;
+      }
+
+      @media (min-width: 768px) {
+        .mdNone {
+          display: none;
+        }
+      }
+
+      /* xsNone: hidden on extra small screens (mobile) */
+      .xsNone {
+        display: block;
+      }
+
+      @media (max-width: 767.98px) {
+        .xsNone {
+          display: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* You can adjust the max-width value as needed */
+        .caAddrr {
+          font-size: 16px;
+        }
+        .start-thumbs-wrapper {
+          margin-top: 5rem;
+        }
+        .start-thumbs-caption {
+          padding: 0.9rem;
+        }
+        .page-nav-caption.height-title {
+          height: auto !important;
+        }
+        .text-align-center .next-hero-title,
+        .text-align-center .next-hero-subtitle {
+          display: table;
+          width: auto;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          margin-top: 8rem;
+        }
+        #logo img {
+          height: 80px !important;
+        }
+        .light-content .hero-subtitle {
+          color: #fff;
+          padding: 1rem;
+        }
+        #hero-footer {
+          display: none;
+        }
+        .mobileLogo {
+          display: block !important;
+        }
+        #hero-styles {
+          margin: 2rem auto;
+        }
+      }
+      .btn-lg {
+        border: 1px solid #9967ce;
+        color: white;
+      }
+      @media (max-width: 400px) {
+        .start-thumbs-wrapper {
+          margin-top: 8rem;
+        }
+        #logo img {
+          height: 60px !important;
+        }
+        .caAddrr {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="hidden hidden-ball smooth-scroll rounded-borders"
+    data-primary-color="#8c6144"
+  >
+    <main>
+      <!-- Preloader -->
+      <div class="preloader-wrap" data-centerline="Loading">
+        <div class="outer">
+          <div class="inner">
+            <div class="trackbar">
+              <div class="preloader-intro">
+                <span>Loading</span>
+              </div>
+              <div class="loadbar"></div>
+              <div class="percentage-wrapper">
+                <div class="percentage" id="precent"></div>
+              </div>
+            </div>
+
+            <div class="percentage-intro">Please wait, content is loading</div>
+          </div>
+        </div>
+      </div>
+      <!--/Preloader -->
+
+      <div class="cd-index cd-main-content">
+        <!-- Page Content -->
+        <div
+          id="clapat-page-content"
+          class="light-content"
+          data-bgcolor="#f3cc07"
+        >
+          <!-- Header -->
+          <header class="App-header">
+            <nav>
+              <a href="#"
+                ><img src="/media/logo192.png" class="logo" alt="logo"
+              /></a>
+              <div class="nav-bar">
+                <div class="socials">
+                  <a
+                    href="https://x.com/jinxthecoin"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><img src="/media/twitter.svg" alt="twitter" /></a
+                  ><a
+                    href="https://t.me/jinxportal"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><img src="/media/telegram.svg" alt="telegram" /></a
+                  ><a
+                    href="https://dexscreener.com/solana/h72lgm51kajbhjnixh3q3vakqzxtoeubhfvfawpt9jmr"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><img src="/media/dexscreener.svg" alt="dexscreener" /></a
+                  ><a
+                    href="https://www.dextools.io/app/en/solana/pair-explorer/H72LGm51KajBhJniXh3Q3VakQzXToEuBHFvfAWPT9JmR?t=1726357743264"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><img src="/media/dextools.svg" alt="dextools"
+                  /></a>
+                </div>
+              </div>
+              <div class="m-socials">
+                <a
+                  href="https://x.com/jinxthecoin"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img src="/media/twitter.svg" alt="twitter" /></a
+                ><a
+                  href="https://t.me/jinxportal"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img src="/media/telegram.svg" alt="telegram" /></a
+                ><a
+                  href="https://dexscreener.com/solana/h72lgm51kajbhjnixh3q3vakqzxtoeubhfvfawpt9jmr"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img src="/media/dexscreener.svg" alt="dexscreener" /></a
+                ><a
+                  href="https://www.dextools.io/app/en/solana/pair-explorer/H72LGm51KajBhJniXh3Q3VakQzXToEuBHFvfAWPT9JmR?t=1726357743264"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img src="/media/dextools.svg" alt="dextools"
+                /></a>
+              </div>
+            </nav>
+          </header>
+          <!--/Header -->
+
+          <!-- Content Scroll -->
+          <div id="content-scroll">
+            <!-- Main -->
+            <div id="main">
+              <!-- Hero Section -->
+              <div id="hero">
+                <div id="hero-styles">
+                  <div
+                    id="hero-caption"
+                    style="z-index: 9; height: initial !important"
+                    class="content-full-width height-title"
+                  >
+                    <div class="inner">
+                      <h1
+                        class="hero-title caption-timeline primary-font-title"
+                      >
+                        <span>GRIM</span>
+                      </h1>
+                      <div class="caption-text">
+                        <p
+                          style="
+                            color: #000;
+                            margin-bottom: 0px;
+                            font-weight: bold;
+                          "
+                        >
+                          A wicked little trickster.
+                        </p>
+                        <p
+                          style="
+                            color: #000;
+                            margin-bottom: 0px;
+                            font-weight: bold;
+                          "
+                        >
+                          A mind sharper than his claws.
+                        </p>
+                        <p
+                          style="
+                            color: #000;
+                            margin-bottom: 0px;
+                            font-weight: bold;
+                          "
+                        >
+                          Ruling over the trenches with a grin.
+                        </p>
+                        <p
+                          style="
+                            color: #000;
+                            margin-bottom: 0px;
+                            font-weight: bold;
+                          "
+                        >
+                          Prince of the Shadows.
+                        </p>
+                        <p style="color: #000; font-weight: bold">
+                          Ruler of chaos.
+                        </p>
+                      </div>
+
+                      <h5
+                        class="light-content caAddrr"
+                        style="
+                          color: #000;
+                          font-weight: bold;
+                          font-size: 20px;
+                          margin-bottom: 0px;
+                          text-align: start;
+                        "
+                      >
+                        Official CA:
+                      </h5>
+                      <div
+                        style="display: flex; align-items: center; gap: 12px"
+                      >
+                        <p class="ca_text">
+                          CMe1QWsoDWFUi95GMkk7mCTnnjxBxtnJ3jbrEhQTVWL5
+                        </p>
+
+                        <div id="copyBtn" style="margin-bottom: 20px">
+                          <img
+                            id="copy_image"
+                            class="copy_image"
+                            height="24px"
+                            width="24px"
+                            src="images/copy.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <a href="https//eqwe" class="buy_link" target="_blank"
+                        >Buy now</a
+                      >
+                    </div>
+
+                    <img src="/media/jinx.png" height="600px" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Main Content -->
+              <div id="main-content">
+                <!-- Main Page Content -->
+                <div id="main-page-content" class="content-max-width">
+                  <!-- Row -->
+                  <div class="content-row text-align-center dark-section">
+                    <div class="move-thumbs-wrapper">
+                      <div class="start-thumbs-caption">
+                        <h2 class="primary-font-title big-title has-mask-fill">
+                          THE COSMIC MEME
+                        </h2>
+
+                        <p>
+                          Say hello, to $SAGE, your crypto friend, ready to take
+                          the solana ecosystem by storm.
+                          <br />
+                          In an era where crypto is becoming more fragmented,
+                          <br />
+                          Sage is here to bring you peace of mind by being your
+                          trusted companion <br />
+                          to new gained wealth and knowledge.
+                        </p>
+                        <p></p>
+                      </div>
+
+                      <div class="start-thumbs-wrapper">
+                        <div
+                          class="start-move-thumb"
+                          data-start="top 120%"
+                          data-stop="600%"
+                        >
+                          <div class="move-thumb-inner">
+                            <div class="section-image">
+                              <img
+                                src="images/png1.png"
+                                class="item-image"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="start-move-thumb"
+                          data-start="top 90%"
+                          data-stop="1100%"
+                        >
+                          <div class="move-thumb-inner">
+                            <div class="section-image">
+                              <img
+                                src="images/png2.png"
+                                class="item-image"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="start-move-thumb"
+                          data-start="top 90%"
+                          data-stop="400%"
+                        >
+                          <div class="move-thumb-inner">
+                            <div class="section-image">
+                              <img
+                                src="images/png3.png"
+                                class="item-image"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="start-move-thumb"
+                          data-start="top 120%"
+                          data-stop="600%"
+                        >
+                          <div class="move-thumb-inner">
+                            <div class="section-image">
+                              <img
+                                src="images/png4.png"
+                                class="item-image"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="start-move-thumb"
+                          data-start="top 100%"
+                          data-stop="750%"
+                        >
+                          <div class="move-thumb-inner">
+                            <div class="section-image">
+                              <img
+                                src="images/png5.png"
+                                class="item-image"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="start-move-thumb"
+                          data-start="top 40%"
+                          data-stop="300%"
+                        >
+                          <div class="move-thumb-inner">
+                            <div class="section-image">
+                              <img
+                                src="images/png6.png"
+                                class="item-image"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="end-thumbs-wrapper">
+                        <div class="end-move-thumb"></div>
+                        <div class="end-move-thumb"></div>
+                        <div class="end-move-thumb"></div>
+                        <div class="end-move-thumb"></div>
+                        <div class="end-move-thumb"></div>
+                        <div class="end-move-thumb"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/Row -->
+                  <!-- Row -->
+
+                  <div
+                    style="
+                      /* background-image: url(images/SOL.png); */
+                      background-size: inherit;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    "
+                    class="content-row dark-section text-align-center row_padding_bottom row_padding_top"
+                  >
+                    <div class="pb-3">
+                      <h2 class="primary-font-title big-title has-mask-fill">
+                        Welcome to Sagenomics
+                      </h2>
+                      <p>
+                        100% LP
+                        <a
+                          href="https://solscan.io/tx/5bs7W36wf1WZ184uC9Vt8U1o8B3LPGgdgopMhx9aWwdoRoNAwjBscdpJGxSUysxzf475vsHDGpwweeX1rp7z117Y"
+                          target="_new"
+                          >BURN</a
+                        >. Why? Because Sage believes in the power of the
+                        community will be <br />
+                        what brings us to a higher market cap. Iron sharpens
+                        iron, friend sharpens friend.
+                      </p>
+                    </div>
+
+                    <div
+                      class="has-animation"
+                      data-delay="100"
+                      style="display: flex; justify-content: center"
+                    >
+                      <div class="one_half last">
+                        <h1 class="">
+                          <img
+                            style="max-width: 300px; margin: 0 auto"
+                            src="images/STARS.png"
+                            alt=""
+                          />
+                        </h1>
+                        <h4 class="has-mask-fill-last">
+                          <span style="background-size: 200% 100%"
+                            >LP
+                            <a
+                              href="https://solscan.io/tx/5bs7W36wf1WZ184uC9Vt8U1o8B3LPGgdgopMhx9aWwdoRoNAwjBscdpJGxSUysxzf475vsHDGpwweeX1rp7z117Y"
+                              target="_new"
+                              >BURN</a
+                            ></span
+                          >
+                        </h4>
+                        <h4 class="has-mask-fill-last">
+                          <span style="background-size: 200% 100%">
+                            <a
+                              href="https://solscan.io/tx/3H88s9gzmq6b5Qbcj5FdbHyuKDh9nwSVhYsSQciSHgPTHqjpaZhGGcGtqSameyMXxt9zgZ151VAmYBEDBwhXM7HJ"
+                              target="_new"
+                              >MINT & OWNERSHIP REVOKED</a
+                            ></span
+                          >
+                        </h4>
+
+                        <h4 class="has-mask-fill-last">
+                          <span style="background-size: 200% 100%"
+                            >No Roadmap No Promises</span
+                          >
+                        </h4>
+                        <h4 class="has-mask-fill-last">
+                          <span style="background-size: 200% 100%"
+                            >JUST CHILL</span
+                          >
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="empty_height"></div>
+                  </div>
+                </div>
+                <!--/Main Page Content -->
+              </div>
+              <!--/Main Content -->
+            </div>
+            <!--/Main -->
+          </div>
+          <!--/Content Scroll -->
+
+          <div id="app"></div>
+        </div>
+        <!--/Page Content -->
+      </div>
+    </main>
+
+    <div class="cd-cover-layer"></div>
+    <div id="magic-cursor">
+      <div id="ball">
+        <div id="ball-drag-x"></div>
+        <div id="ball-drag-y"></div>
+        <div id="ball-loader"></div>
+      </div>
+    </div>
+    <div id="clone-image">
+      <div class="hero-translate"></div>
+    </div>
+    <div id="rotate-device"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="ajax/libs/gsap/3.11.4/Flip.min.js"></script>
+    <script src="ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js"></script>
+
+    <script src="js/clapat.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/scripts.js"></script>
+    <script
+      src="npm/bootstrap%405.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+          const itemToggle = this.getAttribute("aria-expanded");
+
+          for (i = 0; i < items.length; i++) {
+            items[i].setAttribute("aria-expanded", "false");
+          }
+
+          if (itemToggle == "false") {
+            this.setAttribute("aria-expanded", "true");
+          }
+        }
+
+        items.forEach((item) =>
+          item.addEventListener("click", toggleAccordion)
+        );
+      });
+    </script>
+    <script>
+      document.getElementById("copyBtn").addEventListener("click", () => {
+        // Simulate text copy
+        navigator.clipboard.writeText(
+          "CMe1QWsoDWFUi95GMkk7mCTnnjxBxtnJ3jbrEhQTVWL5"
+        );
+
+        // Animate icon
+        const icon = document.getElementById("copy_image");
+        icon.classList.add("animate");
+        setTimeout(() => icon.classList.remove("animate"), 400);
+
+        // Show copied text
+        const copiedText = document.getElementById("copiedText");
+        copiedText.classList.add("show");
+        setTimeout(() => copiedText.classList.remove("show"), 1200);
+      });
+    </script>
+  </body>
+</html>
